@@ -36,3 +36,10 @@
 		item "Rebuilt package with newer Dist::Inkt to resolve minor packaging issues."^^Packaging;
 	].
 
+
+`Class-Tiny-Antlers 0.025 cpan:RSHINGLETON`
+	issued  2016-08-23;
+	changeset [
+		item "Requires Class::Tiny 1.004."^^Update;
+		item "Add initializer routines for lazy attributes."^^Update;
+	].
