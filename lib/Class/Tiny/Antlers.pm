@@ -334,11 +334,15 @@ Class::Tiny::Antlers - Moose-like sugar for Class::Tiny
    Lazy attribute initializers (both default and builder will work for 'lazy')
       has foo => (is => 'lazy', builder => sub{ 'bar' });
 
+   has bar =>  (is => 'lazy', builder => '_setup_bar' );
+   sub _setup_bar{
+        my $self = shift;
+        return 'foo';
+   }
 
    Class introspection to find builder subroutines for defined lazy attributes similar to Moo:
 
    has foo => (is => 'lazy');
-
    sub _build_foo {
         my $self = shift;
         return 'bar';
