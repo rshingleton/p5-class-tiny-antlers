@@ -7,7 +7,7 @@ use strict;
 use warnings;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION = '0.023';
+our $VERSION = '0.025';
 
 use Class::Tiny 1.004 ();
 our @ISA = 'Class::Tiny';
